@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaxmat - AI vs Inson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash" class="screen">
+    <div class="splash-content">
+      <div class="logo">♔</div>
+      <h1>SHAXMAT</h1>
+      <p>Zamonaviy AI bilan o'ynang</p>
+      <button id="startBtn" class="btn">O'YINNI BOSHLASH</button>
+    </div>
+  </div>
+
+  <!-- Menu Screen -->
+  <div id="menu" class="screen hidden">
+    <h2>O'yin Turini Tanlang</h2>
+    <div class="menu-buttons">
+      <button class="btn mode-btn" data-mode="human">👥 Inson vs Inson</button>
+      <button class="btn mode-btn" data-mode="ai">🤖 Inson vs Robot</button>
+    </div>
+    <div id="ai-difficulty" class="hidden">
+      <h3>Robot Qiyinligi:</h3>
+      <div class="diff-buttons">
+        <button class="btn diff-btn" data-diff="1">Oson</button>
+        <button class="btn diff-btn" data-diff="2">O'rtacha</button>
+        <button class="btn diff-btn" data-diff="3">Qiyin</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game" class="screen hidden">
+    <div class="game-header">
+      <h3 id="turn-indicator">⚪ Oq navbat</h3>
+      <button id="backBtn" class="btn small">↩ Qaytish</button>
+    </div>
+    <div class="board-container">
+      <div id="chessboard"></div>
+    </div>
+    <div class="game-info">
+      <div id="captured-black"></div>
+      <div id="game-status">O'yin boshlandi!</div>
+      <div id="captured-white"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
