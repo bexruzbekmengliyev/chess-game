@@ -106,6 +106,19 @@ function isKingInCheck(color) {
   return false;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 function getRawMoves(r,c) { /* Simplified for check detection */ 
   const p=board[r][c]; if(!p) return []; const type=p[1]; const col=p[0]; const m=[];
   const add=(nr,nc)=>{if(nr<0||nr>7||nc<0||nc>7)return false; const t=board[nr][nc]; if(!t){m.push({r:nr,c:nc});return true;} if(t[0]!==col){m.push({r:nr,c:nc});return false;} return false;};
